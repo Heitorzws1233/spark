@@ -7,19 +7,19 @@ getgenv().loaded = true
 local StarterGui = game:GetService("StarterGui")
 
 StarterGui:SetCore("SendNotification", {
-    Title = "script loading..",
-    Text = "wait 8 seconds to load",
-    Duration = 8, -- seconds the notification stays on screen
-    Button1 = "Got it"
+    Title = "Spark Project",
+    Text = "Carregando Menu, aguarde 8 Segundos.",
+    Duration = 8, -- a tela de notificação vai ficar 8 segundos
+    Button1 = "Aee!"
 })
 
 
 task.wait(8)
 StarterGui:SetCore("SendNotification", {
-    Title = "❗",
-    Text = "Enjoy",
-    Duration = 8, -- seconds the notification stays on screen
-    Button1 = "Got it"
+    Title = "Spark Project",
+    Text = "Aproveite!",
+    Duration = 8, --- a tela de notificação vai ficar 8 segundos
+    Button1 = "Valeu!"
 })
 
 if LPH_OBFUSCATED == nil then
@@ -761,7 +761,7 @@ end
 for Index, Value in Images do
     local Location = library.directory.."/assets/"..Value
     if not isfile(Location) then
-        local ImageDiddyAhhBlud = game:HttpGet("https://raw.githubusercontent.com/KingVonOBlockJoyce/imagessynex/main/"..Value)
+        local ImageDiddyAhhBlud = game:HttpGet("https://raw.githubusercontent.com/Heitorzws1233/imagessparkpvp/main/"..Value)
         repeat wait() until ImageDiddyAhhBlud ~= nil
         writefile(Location, ImageDiddyAhhBlud)
     end
